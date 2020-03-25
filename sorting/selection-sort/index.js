@@ -1,3 +1,4 @@
+import {doTheSwap} from '../../utility';
 const unsorted = [1,234,21,435,543,5,09,3,345]
 // const unsorted = [8,4,6,2,4,3,2]
 
@@ -17,12 +18,6 @@ function selectionSort(unsorted) {
   }
   
   return unsorted;
-}
-
-function doTheSwap(array, iLeft, iRight) {
-  let temp = array[iLeft];
-  array[iLeft] = array[iRight];
-  array[iRight] = temp;
 }
 
 console.log(selectionSort(unsorted));
