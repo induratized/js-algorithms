@@ -2,12 +2,12 @@ const array = [2,4,1,3,7,5,6,9,8]
 
 function mergeSort(arr) {
   // exit cases
-  if(!arr || arr.length == 0) {
+  if(!arr) {
     return [];
   }
   
-  if(arr.length == 1) {
-    console.log(arr)
+  if(arr.length < 2) {
+    // console.log(arr)
     return arr
   }
   
